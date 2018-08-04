@@ -6,6 +6,13 @@
 //  Copyright © 2018年 Sun. All rights reserved.
 //
 
+/*
+    图文的URL https://www.apiopen.top/satinGodApi
+    两个参数:
+            type:1
+            page:1...
+ */
+
 #import "CombineTableViewController.h"
 #import "CombineCell.h"
 #import <AFNetworking.h>
