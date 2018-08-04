@@ -45,7 +45,7 @@ static NSString *URL = @"https://www.apiopen.top/meituApi";
     self.tableView.estimatedRowHeight           = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
-//    self.tableView.alpha              = 0.5f;
+    self.tableView.alpha              = 0.5f;
     
     self.page      = 2;
     self.semaphore = [[GCDSemaphore alloc] init];
@@ -59,9 +59,7 @@ static NSString *URL = @"https://www.apiopen.top/meituApi";
     }];
     self.tableView.mj_header          = header;
     
-//    __weak PhotoTableViewController *wself = self;
     MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-//        if (self.isFetching) [wself.tableView.mj_footer endRefreshing];
         [self loadPhotoDataUsePage:self.page];
     }];
     self.tableView.mj_footer          = footer;
@@ -157,7 +155,7 @@ static NSString *URL = @"https://www.apiopen.top/meituApi";
             
         }];
         
-        if (self.page == 1) {
+        if (self.page == 2) {
             [UIView animateWithDuration:0.35f animations:^{
                 self.tableView.alpha = 1.f;
             }];

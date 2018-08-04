@@ -73,13 +73,15 @@
 
 - (void)loadContent {
     
-#warning 加载的时候闪一下是因为下边的动画, 注释掉就不闪了
+
     __weak PhotoCell *wself = self;
     self.dateLabel.text = self.data.dateString;
     [_pictureView sd_setImageWithURL:[NSURL URLWithString:self.data.url] placeholderImage:nil options:SDWebImageForceTransition completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        #warning 加载的时候闪一下是因为下边的动画, 注释掉就不闪了
+        wself.pictureView.image = image;
 //        wself.pictureView.alpha = 0;
 //        wself.transform         = CGAffineTransformMakeScale(0.85, 0.85);
-        wself.pictureView.image = image;
+        
 //        [UIView animateWithDuration:0.5f delay:0.f options:UIViewAnimationOptionAllowUserInteraction animations:^{
 //            wself.pictureView.alpha = 1.f;
 //            wself.transform         = CGAffineTransformMakeScale(1.0, 1.0);
