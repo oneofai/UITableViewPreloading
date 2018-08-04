@@ -44,23 +44,29 @@
     [self.contentView addSubview:self.pictureView];
     
     
+    UIView *backView                  = [[UIView alloc] initWithFrame:CGRectMake(0, Height/ 2.7 - 30, Width, 30)];
+    backView.backgroundColor          = [UIColor colorWithWhite:0.8 alpha:0.5];
+    [self.contentView addSubview:backView];
     
+    CGFloat gap             = 5;
+    UIView *redView         = [[UIView alloc] initWithFrame:CGRectMake(Width - gap, 0, 5,  30)];
+    redView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
+    [backView addSubview:redView];
     
-    self.dateLabel                    = [[UILabel alloc] initWithFrame:CGRectMake(0, Height / 2.7 - 30, Width, 30)];
+    self.dateLabel                    = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, Width - redView.width - gap, 30)];
     self.dateLabel.textColor          = [[UIColor blackColor] colorWithAlphaComponent:0.75];
-    self.dateLabel.backgroundColor    = [UIColor colorWithWhite:0.8 alpha:0.5];
     self.dateLabel.textAlignment      = NSTextAlignmentRight;
     self.dateLabel.font               = [UIFont systemFontOfSize:13.f];
-    [self.contentView addSubview:self.dateLabel];
+    [backView addSubview:self.dateLabel];
     
     UIView *topLine                      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Width, 0.5)];
     topLine.backgroundColor              = [[UIColor redColor] colorWithAlphaComponent:0.5f];
-    topLine.top                       = self.dateLabel.top;
+    topLine.top                          = backView.top;
     [self.contentView addSubview:topLine];
     
     UIView *bottomLine                      = [[UIView alloc] initWithFrame:CGRectMake(0, 0, Width, 0.5)];
     bottomLine.backgroundColor              = [[UIColor redColor] colorWithAlphaComponent:0.5f];
-    bottomLine.bottom                       = self.dateLabel.bottom;
+    bottomLine.bottom                       = backView.bottom;
     [self.contentView addSubview:bottomLine];
 }
 
@@ -71,13 +77,13 @@
     __weak PhotoCell *wself = self;
     self.dateLabel.text = self.data.dateString;
     [_pictureView sd_setImageWithURL:[NSURL URLWithString:self.data.url] placeholderImage:nil options:SDWebImageForceTransition completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-        wself.pictureView.alpha = 0;
-        wself.transform         = CGAffineTransformMakeScale(0.85, 0.85);
+//        wself.pictureView.alpha = 0;
+//        wself.transform         = CGAffineTransformMakeScale(0.85, 0.85);
         wself.pictureView.image = image;
-        [UIView animateWithDuration:0.5f delay:0.f options:UIViewAnimationOptionAllowUserInteraction animations:^{
-            wself.pictureView.alpha = 1.f;
-            wself.transform         = CGAffineTransformMakeScale(1.0, 1.0);
-        } completion:nil];
+//        [UIView animateWithDuration:0.5f delay:0.f options:UIViewAnimationOptionAllowUserInteraction animations:^{
+//            wself.pictureView.alpha = 1.f;
+//            wself.transform         = CGAffineTransformMakeScale(1.0, 1.0);
+//        } completion:nil];
     }];
 
 }

@@ -87,25 +87,30 @@ static NSString *URL = @"https://www.apiopen.top/meituApi";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     PhotoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PhotoCell"];
-    cell.data = self.data[indexPath.row];
+    
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(PhotoCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-//    [cell cellOffset];
+    cell.data = self.data[indexPath.row];
+    [cell cellOffset];
     [cell loadContent];
-    
-    
 }
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(PhotoCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath {
     
-//    [cell cancelAnimation];
+    [cell cancelAnimation];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    NSArray <PhotoCell *> *array = [self.tableView visibleCells];
+    
+    [array enumerateObjectsUsingBlock:^(PhotoCell * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        [obj cellOffset];
+    }];
     
     if (_isFetching) return;
     
