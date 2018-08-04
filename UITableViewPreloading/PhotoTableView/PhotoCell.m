@@ -105,7 +105,7 @@
     CGFloat cellOffsetY        = centerY - windowCenter.y;
     
     CGFloat offsetDig          =  cellOffsetY / self.superview.frame.size.height * 2;
-    CGFloat offset             =  -offsetDig * (Height / 2.7) / 2;
+    CGFloat offset             =  -offsetDig * (Height / 5) / 2;
     
     CGAffineTransform transY   = CGAffineTransformMakeTranslation(0, offset);
     self.pictureView.transform = transY;
