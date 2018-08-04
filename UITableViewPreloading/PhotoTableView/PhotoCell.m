@@ -66,8 +66,9 @@
 
 
 - (void)loadContent {
-    __weak PhotoCell *wself = self;
     
+#warning 加载的时候闪一下是因为下边的动画, 注释掉就不闪了
+    __weak PhotoCell *wself = self;
     self.dateLabel.text = self.data.dateString;
     [_pictureView sd_setImageWithURL:[NSURL URLWithString:self.data.url] placeholderImage:nil options:SDWebImageForceTransition completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         wself.pictureView.alpha = 0;
