@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D0CB187C07C265A0EBCB380 /* libPods-UITableViewPreloadingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61C9B8A6DF68DF6898071DE /* libPods-UITableViewPreloadingUITests.a */; };
+		8DF1D4D48E31191C82107701 /* libPods-UITableViewPreloadingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DB68493645878E6F256D64 /* libPods-UITableViewPreloadingTests.a */; };
 		A491605621154521000B7BA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A491605521154521000B7BA6 /* AppDelegate.m */; };
 		A491605921154521000B7BA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A491605821154521000B7BA6 /* ViewController.m */; };
 		A491605C21154521000B7BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A491605A21154521000B7BA6 /* Main.storyboard */; };
@@ -15,6 +17,18 @@
 		A491606421154522000B7BA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A491606321154522000B7BA6 /* main.m */; };
 		A491606E21154522000B7BA6 /* UITableViewPreloadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A491606D21154522000B7BA6 /* UITableViewPreloadingTests.m */; };
 		A491607921154522000B7BA6 /* UITableViewPreloadingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A491607821154522000B7BA6 /* UITableViewPreloadingUITests.m */; };
+		A491608D2115585E000B7BA6 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A491608C2115585E000B7BA6 /* PhotoCell.m */; };
+		A491609021156503000B7BA6 /* PhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A491608F21156503000B7BA6 /* PhotoTableViewController.m */; };
+		A491609321156658000B7BA6 /* PhotoCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = A491609221156658000B7BA6 /* PhotoCellData.m */; };
+		A491609721158A15000B7BA6 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = A491609621158A15000B7BA6 /* UIView+SetRect.m */; };
+		A49160A22115B58F000B7BA6 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A491609A2115B58F000B7BA6 /* GCDQueue.m */; };
+		A49160A32115B58F000B7BA6 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A491609B2115B58F000B7BA6 /* GCDTimer.m */; };
+		A49160A42115B58F000B7BA6 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = A491609C2115B58F000B7BA6 /* GCDGroup.m */; };
+		A49160A52115B58F000B7BA6 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = A491609E2115B58F000B7BA6 /* GCDSemaphore.m */; };
+		A49160A82115B9D5000B7BA6 /* CombineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A49160A72115B9D5000B7BA6 /* CombineTableViewController.m */; };
+		A49160AB2115B9E6000B7BA6 /* CombineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A49160AA2115B9E6000B7BA6 /* CombineCell.m */; };
+		A49160AE2115B9F9000B7BA6 /* CombineCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = A49160AD2115B9F9000B7BA6 /* CombineCellData.m */; };
+		C2B8A83A88C14202A478431C /* libPods-UITableViewPreloading.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D51C1D92DA1F5333558F9830 /* libPods-UITableViewPreloading.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02DB68493645878E6F256D64 /* libPods-UITableViewPreloadingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UITableViewPreloadingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D192A7CA28C2667A8C3FE45 /* Pods-UITableViewPreloadingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPreloadingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPreloadingTests/Pods-UITableViewPreloadingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26CAAA2FDA9B1887468113BE /* Pods-UITableViewPreloadingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPreloadingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPreloadingUITests/Pods-UITableViewPreloadingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CD6556D09B323335607A8D7 /* Pods-UITableViewPreloading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPreloading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPreloading/Pods-UITableViewPreloading.debug.xcconfig"; sourceTree = "<group>"; };
+		8FAD52E038BB3BF43F98CB88 /* Pods-UITableViewPreloading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPreloading.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPreloading/Pods-UITableViewPreloading.release.xcconfig"; sourceTree = "<group>"; };
+		9E83A6CB4C3BFB4AE0AF5427 /* Pods-UITableViewPreloadingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPreloadingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPreloadingTests/Pods-UITableViewPreloadingTests.release.xcconfig"; sourceTree = "<group>"; };
 		A491605121154521000B7BA6 /* UITableViewPreloading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewPreloading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A491605421154521000B7BA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A491605521154521000B7BA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +71,32 @@
 		A491607421154522000B7BA6 /* UITableViewPreloadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewPreloadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A491607821154522000B7BA6 /* UITableViewPreloadingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewPreloadingUITests.m; sourceTree = "<group>"; };
 		A491607A21154522000B7BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A491608B2115585E000B7BA6 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		A491608C2115585E000B7BA6 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		A491608E21156503000B7BA6 /* PhotoTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewController.h; sourceTree = "<group>"; };
+		A491608F21156503000B7BA6 /* PhotoTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewController.m; sourceTree = "<group>"; };
+		A491609121156658000B7BA6 /* PhotoCellData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCellData.h; sourceTree = "<group>"; };
+		A491609221156658000B7BA6 /* PhotoCellData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCellData.m; sourceTree = "<group>"; };
+		A491609521158A15000B7BA6 /* UIView+SetRect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		A491609621158A15000B7BA6 /* UIView+SetRect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		A49160992115B58F000B7BA6 /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		A491609A2115B58F000B7BA6 /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		A491609B2115B58F000B7BA6 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		A491609C2115B58F000B7BA6 /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		A491609D2115B58F000B7BA6 /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		A491609E2115B58F000B7BA6 /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		A491609F2115B58F000B7BA6 /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		A49160A02115B58F000B7BA6 /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		A49160A12115B58F000B7BA6 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		A49160A62115B9D5000B7BA6 /* CombineTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineTableViewController.h; sourceTree = "<group>"; };
+		A49160A72115B9D5000B7BA6 /* CombineTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineTableViewController.m; sourceTree = "<group>"; };
+		A49160A92115B9E6000B7BA6 /* CombineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineCell.h; sourceTree = "<group>"; };
+		A49160AA2115B9E6000B7BA6 /* CombineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineCell.m; sourceTree = "<group>"; };
+		A49160AC2115B9F9000B7BA6 /* CombineCellData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineCellData.h; sourceTree = "<group>"; };
+		A49160AD2115B9F9000B7BA6 /* CombineCellData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineCellData.m; sourceTree = "<group>"; };
+		A61C9B8A6DF68DF6898071DE /* libPods-UITableViewPreloadingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UITableViewPreloadingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D51C1D92DA1F5333558F9830 /* libPods-UITableViewPreloading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UITableViewPreloading.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29F856BDE803F03E0803A27 /* Pods-UITableViewPreloadingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPreloadingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPreloadingUITests/Pods-UITableViewPreloadingUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B8A83A88C14202A478431C /* libPods-UITableViewPreloading.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF1D4D48E31191C82107701 /* libPods-UITableViewPreloadingTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +120,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0CB187C07C265A0EBCB380 /* libPods-UITableViewPreloadingUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180CD1D5EEF09FCA2558C5D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CD6556D09B323335607A8D7 /* Pods-UITableViewPreloading.debug.xcconfig */,
+				8FAD52E038BB3BF43F98CB88 /* Pods-UITableViewPreloading.release.xcconfig */,
+				1D192A7CA28C2667A8C3FE45 /* Pods-UITableViewPreloadingTests.debug.xcconfig */,
+				9E83A6CB4C3BFB4AE0AF5427 /* Pods-UITableViewPreloadingTests.release.xcconfig */,
+				26CAAA2FDA9B1887468113BE /* Pods-UITableViewPreloadingUITests.debug.xcconfig */,
+				E29F856BDE803F03E0803A27 /* Pods-UITableViewPreloadingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F9D8C44126D186BF665004D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D51C1D92DA1F5333558F9830 /* libPods-UITableViewPreloading.a */,
+				02DB68493645878E6F256D64 /* libPods-UITableViewPreloadingTests.a */,
+				A61C9B8A6DF68DF6898071DE /* libPods-UITableViewPreloadingUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A491604821154521000B7BA6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +157,8 @@
 				A491606C21154522000B7BA6 /* UITableViewPreloadingTests */,
 				A491607721154522000B7BA6 /* UITableViewPreloadingUITests */,
 				A491605221154521000B7BA6 /* Products */,
+				180CD1D5EEF09FCA2558C5D0 /* Pods */,
+				2F9D8C44126D186BF665004D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +175,14 @@
 		A491605321154521000B7BA6 /* UITableViewPreloading */ = {
 			isa = PBXGroup;
 			children = (
+				A49160982115B58F000B7BA6 /* GCD */,
 				A491605421154521000B7BA6 /* AppDelegate.h */,
 				A491605521154521000B7BA6 /* AppDelegate.m */,
 				A491605721154521000B7BA6 /* ViewController.h */,
 				A491605821154521000B7BA6 /* ViewController.m */,
+				A4916094211589F3000B7BA6 /* UIView+Category */,
+				A4916087211553E3000B7BA6 /* CombineTableView */,
+				A4916086211547A9000B7BA6 /* PhotoTableView */,
 				A491605A21154521000B7BA6 /* Main.storyboard */,
 				A491605D21154522000B7BA6 /* Assets.xcassets */,
 				A491605F21154522000B7BA6 /* LaunchScreen.storyboard */,
@@ -132,6 +210,57 @@
 			path = UITableViewPreloadingUITests;
 			sourceTree = "<group>";
 		};
+		A4916086211547A9000B7BA6 /* PhotoTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A491608B2115585E000B7BA6 /* PhotoCell.h */,
+				A491608C2115585E000B7BA6 /* PhotoCell.m */,
+				A491608E21156503000B7BA6 /* PhotoTableViewController.h */,
+				A491608F21156503000B7BA6 /* PhotoTableViewController.m */,
+				A491609121156658000B7BA6 /* PhotoCellData.h */,
+				A491609221156658000B7BA6 /* PhotoCellData.m */,
+			);
+			path = PhotoTableView;
+			sourceTree = "<group>";
+		};
+		A4916087211553E3000B7BA6 /* CombineTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A49160A62115B9D5000B7BA6 /* CombineTableViewController.h */,
+				A49160A72115B9D5000B7BA6 /* CombineTableViewController.m */,
+				A49160A92115B9E6000B7BA6 /* CombineCell.h */,
+				A49160AA2115B9E6000B7BA6 /* CombineCell.m */,
+				A49160AC2115B9F9000B7BA6 /* CombineCellData.h */,
+				A49160AD2115B9F9000B7BA6 /* CombineCellData.m */,
+			);
+			path = CombineTableView;
+			sourceTree = "<group>";
+		};
+		A4916094211589F3000B7BA6 /* UIView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				A491609521158A15000B7BA6 /* UIView+SetRect.h */,
+				A491609621158A15000B7BA6 /* UIView+SetRect.m */,
+			);
+			path = "UIView+Category";
+			sourceTree = "<group>";
+		};
+		A49160982115B58F000B7BA6 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				A49160992115B58F000B7BA6 /* GCDSemaphore.h */,
+				A491609A2115B58F000B7BA6 /* GCDQueue.m */,
+				A491609B2115B58F000B7BA6 /* GCDTimer.m */,
+				A491609C2115B58F000B7BA6 /* GCDGroup.m */,
+				A491609D2115B58F000B7BA6 /* GCD.h */,
+				A491609E2115B58F000B7BA6 /* GCDSemaphore.m */,
+				A491609F2115B58F000B7BA6 /* GCDQueue.h */,
+				A49160A02115B58F000B7BA6 /* GCDGroup.h */,
+				A49160A12115B58F000B7BA6 /* GCDTimer.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A491607D21154522000B7BA6 /* Build configuration list for PBXNativeTarget "UITableViewPreloading" */;
 			buildPhases = (
+				F5AACFBD0D296A8C631894D5 /* [CP] Check Pods Manifest.lock */,
 				A491604D21154521000B7BA6 /* Sources */,
 				A491604E21154521000B7BA6 /* Frameworks */,
 				A491604F21154521000B7BA6 /* Resources */,
+				22537DA91A69D9705AFA435E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A491608021154522000B7BA6 /* Build configuration list for PBXNativeTarget "UITableViewPreloadingTests" */;
 			buildPhases = (
+				6BFE6001F3E3D9BCB4673DD2 /* [CP] Check Pods Manifest.lock */,
 				A491606521154522000B7BA6 /* Sources */,
 				A491606621154522000B7BA6 /* Frameworks */,
 				A491606721154522000B7BA6 /* Resources */,
@@ -174,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A491608321154522000B7BA6 /* Build configuration list for PBXNativeTarget "UITableViewPreloadingUITests" */;
 			buildPhases = (
+				FF9817A5D9F513A7A6431C46 /* [CP] Check Pods Manifest.lock */,
 				A491607021154522000B7BA6 /* Sources */,
 				A491607121154522000B7BA6 /* Frameworks */,
 				A491607221154522000B7BA6 /* Resources */,
@@ -257,14 +390,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22537DA91A69D9705AFA435E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UITableViewPreloading/Pods-UITableViewPreloading-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITableViewPreloading/Pods-UITableViewPreloading-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BFE6001F3E3D9BCB4673DD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITableViewPreloadingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5AACFBD0D296A8C631894D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITableViewPreloading-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF9817A5D9F513A7A6431C46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITableViewPreloadingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A491604D21154521000B7BA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49160A32115B58F000B7BA6 /* GCDTimer.m in Sources */,
+				A49160AB2115B9E6000B7BA6 /* CombineCell.m in Sources */,
+				A49160A22115B58F000B7BA6 /* GCDQueue.m in Sources */,
+				A491608D2115585E000B7BA6 /* PhotoCell.m in Sources */,
 				A491605921154521000B7BA6 /* ViewController.m in Sources */,
+				A49160AE2115B9F9000B7BA6 /* CombineCellData.m in Sources */,
+				A49160A42115B58F000B7BA6 /* GCDGroup.m in Sources */,
 				A491606421154522000B7BA6 /* main.m in Sources */,
+				A491609021156503000B7BA6 /* PhotoTableViewController.m in Sources */,
+				A49160A82115B9D5000B7BA6 /* CombineTableViewController.m in Sources */,
+				A491609321156658000B7BA6 /* PhotoCellData.m in Sources */,
+				A49160A52115B58F000B7BA6 /* GCDSemaphore.m in Sources */,
 				A491605621154521000B7BA6 /* AppDelegate.m in Sources */,
+				A491609721158A15000B7BA6 /* UIView+SetRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -422,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -431,11 +650,13 @@
 		};
 		A491607E21154522000B7BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CD6556D09B323335607A8D7 /* Pods-UITableViewPreloading.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU7XTQSZ6Z;
 				INFOPLIST_FILE = UITableViewPreloading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +669,13 @@
 		};
 		A491607F21154522000B7BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FAD52E038BB3BF43F98CB88 /* Pods-UITableViewPreloading.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU7XTQSZ6Z;
 				INFOPLIST_FILE = UITableViewPreloading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +688,7 @@
 		};
 		A491608121154522000B7BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D192A7CA28C2667A8C3FE45 /* Pods-UITableViewPreloadingTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +708,7 @@
 		};
 		A491608221154522000B7BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E83A6CB4C3BFB4AE0AF5427 /* Pods-UITableViewPreloadingTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +728,7 @@
 		};
 		A491608421154522000B7BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CAAA2FDA9B1887468113BE /* Pods-UITableViewPreloadingUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU7XTQSZ6Z;
@@ -521,6 +747,7 @@
 		};
 		A491608521154522000B7BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29F856BDE803F03E0803A27 /* Pods-UITableViewPreloadingUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU7XTQSZ6Z;
