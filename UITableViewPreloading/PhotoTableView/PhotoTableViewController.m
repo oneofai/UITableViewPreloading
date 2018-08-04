@@ -172,6 +172,21 @@ static NSString *URL = @"https://www.apiopen.top/meituApi";
     }];
 }
 
+- (void)viewDidLayoutSubviews {
+    
+    //设置滚动条的颜色
+    for (UIView* subview in [self.tableView subviews]) {
+        if([subview isKindOfClass:[UIImageView class]]) {
+            UIImageView *img=(UIImageView*)subview;
+            img.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:0.7];
+        }
+    }
+    
+    [super viewDidLayoutSubviews];
+    
+}
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
